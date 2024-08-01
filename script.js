@@ -1,19 +1,23 @@
 document.getElementById("surveyForm").addEventListener("submit", function(event) {
-    // Validar que el formulario esté completo
-    const formData = new FormData(event.target);
-    for (const value of formData.values()) {
-        if (value === "") {
-            alert("Por favor, completa todos los campos obligatorios.");
-            event.preventDefault(); // Evita que se envíe el formulario
-            return;
-        }
-    }
-    
     event.preventDefault(); // Evita la recarga de la página
+
+    const formData = new FormData(event.target);
+    let responses = {}; // Objeto para almacenar las respuestas
+
+    // Recopilar las respuestas
+    for (const [key, value] of formData.entries()) {
+        responses[key] = value; // Guardar en el objeto
+    }
+
+    // Mostrar respuestas en la consola
+    console.log("Respuestas del jugador:");
+    for (const key in responses) {
+        console.log(`${key}: ${responses[key]}`);
+    }
+
+    // Mostrar un mensaje de agradecimiento en la interfaz
     alert("Encuesta enviada. ¡Gracias por participar!");
 
-    // Imprimir los datos en la consola (opcional)
-    for (const entry of formData) {
-        console.log(entry[0] + ": " + entry[1]);
-    }
+    // Opcional: Mostrar las respuestas en un alert (puede ser molesto para algunos)
+    // alert(JSON.stringify(responses, null, 2));
 });
