@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Nutrición Deportiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Nutrición Deportiva</h1>
+        
+        <form id="surveyForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="position">Posición en el equipo:</label>
+            <input type="text" id="position" name="position" required>
+
+            <h2>Nutrición Deportiva</h2>
+            <label>¿Cuántas comidas principales consumes al día?</label>
+            <select name="meals" required>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4 o más">4 o más</option>
+            </select>
+
+            <label>¿Cuántos refrigerios consumes al día?</label>
+            <select name="snacks" required>
+                <option value="Ninguno">Ninguno</option>
+                <option value="1-2">1-2</option>
+                <option value="3 o más">3 o más</option>
+            </select>
+
+            <label>¿Bebes suficiente agua a lo largo del día?</label>
+            <select name="water" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="A veces">A veces</option>
+            </select>
+
+            <label>¿Qué suplementos utilizas para tu entrenamiento? (Enumera todos los que utilizas)</label>
+            <textarea name="supplements" rows="3" placeholder="Especificar suplementos (si no utilizas, deja en blanco)"></textarea>
+
+            <label>Si no utilizas suplementos, ¿qué otras cosas utilizas para mejorar tu rendimiento?</label>
+            <textarea name="alternativeProducts" rows="3" placeholder="Especificar otras cosas (si no utilizas, deja en blanco)"></textarea>
+
+            <h2>Condiciones de Salud</h2>
+            <label>¿Tienes alguna enfermedad cardíaca que te impida entrenar?</label>
+            <select name="heartCondition" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Tienes alguna enfermedad respiratoria u otra que afecte tu entrenamiento?</label>
+            <select name="respiratoryCondition" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Si respondiste "Sí" en alguna de las preguntas anteriores, por favor especifica:</label>
+            <textarea name="healthDetails" rows="3" placeholder="Especificar condiciones de salud"></textarea>
+
+            <h2>Salud Mental</h2>
+            <label>¿Has tenido alguna condición de salud mental como ansiedad, depresión u otras?</label>
+            <select name="mentalHealthCondition" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Si respondiste "Sí", ¿te encuentras en tratamiento?</label>
+            <select name="mentalHealthTreatment" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+                <option value="No estoy seguro">No estoy seguro</option>
+            </select>
+
+            <label>Si deseas, especifica la condición de salud mental y tipos de tratamiento:</label>
+            <textarea name="mentalHealthDetails" rows="3" placeholder="Especificar condiciones y tratamientos"></textarea>
+
+            <h2>Condiciones de Medicamentos y Drogas</h2>
+            <label>¿Consumes algún tipo de drogas o medicamentos bajo receta médica?</label>
+            <select name="substanceUse" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Si respondiste "Sí", ¿te encuentras en tratamiento con tu médico de cabecera?</label>
+            <select name="substanceTreatment" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <h2>Conocimientos y Habilidades Técnicas</h2>
+            <label>¿Conoces el ciclo de juego desde la organización ofensiva a la defensiva y sus transiciones?</label>
+            <select name="gameCycleKnowledge" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Conoces los fundamentos técnicos del juego? Si es así, ¿cuáles? (ej
