@@ -101,4 +101,83 @@
                 <option value="No">No</option>
             </select>
 
-            <label>¿Conoces los fundamentos técnicos del juego? Si es así, ¿cuáles? (ej
+            <label>¿Conoces los fundamentos técnicos del juego? Si es así, ¿cuáles? (ejemplo: control de balón, conducción, pase, etc.)</label>
+            <textarea name="technicalKnowledge" rows="3" placeholder="Especificar fundamentos técnicos"></textarea>
+
+            <label>¿Consideras que tus habilidades técnicas son óptimas en este momento?</label>
+            <select name="technicalSkillsAssessment" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Consideras que eres un jugador polifuncional?</label>
+            <select name="versatilePlayer" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Crees que interpretas y ejecutas correctamente el juego con balón y sin balón?</label>
+            <select name="gameInterpretation" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>De acuerdo a los aspectos físicos, ¿tienes un buen entendimiento por la resistencia, la velocidad, la fuerza, la coordinación y la flexibilidad?</label>
+            <select name="physicalUnderstanding" required>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Si respondiste "Sí" en la última pregunta, ¿cuáles consideras que son tus fortalezas? (si aplica)</label>
+            <textarea name="physicalStrengths" rows="3" placeholder="Especificar fortalezas"></textarea>
+
+            <label>¿Cuáles consideras que son tus debilidades? (si aplica)</label>
+            <textarea name="physicalWeaknesses" rows="3" placeholder="Especificar debilidades"></textarea>
+
+            <h2>Conducta Personal</h2>
+            <label>¿Cómo consideras tu conducta con el grupo de jugadores del plantel?</label>
+            <select name="conductWithTeammates" required>
+                <option value="Positiva">Positiva</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Negativa">Negativa</option>
+            </select>
+
+            <label>¿Cómo consideras tu conducta frente a rivales?</label>
+            <select name="conductWithRivals" required>
+                <option value="Positiva">Positiva</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Negativa">Negativa</option>
+            </select>
+
+            <label>¿Cómo consideras tu conducta frente a tus profesores y/o entrenadores?</label>
+            <select name="conductWithCoaches" required>
+                <option value="Positiva">Positiva</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Negativa">Negativa</option>
+            </select>
+
+            <h2>Entrenamiento Físico</h2>
+            <label>¿Cuántos días a la semana entrenas?</label>
+            <select name="trainingDays" required>
+                <option value="1-2">1-2</option>
+                <option value="3-4">3-4</option>
+                <option value="5-6">5-6</option>
+                <option value="7">7</option>
+            </select>
+
+            <h2>Descanso</h2>
+            <label>¿Cuántas horas duermes en promedio por noche?</label>
+            <select name="sleepHours" required>
+                <option value="Menos de 6">Menos de 6 horas</option>
+                <option value="6-7">6-7 horas</option>
+                <option value="7-8">7-8 horas</option>
+                <option value="Más de 8">Más de 8 horas</option>
+            </select>
+
+            <input type="submit" value="Enviar Encuesta">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
